@@ -1,0 +1,20 @@
+<!-- include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<!-- modal에 띄우고자하는 코드 -->
+<div id="test" class="modal">
+    <p>떴다~ 떴다~ 모달창!</p>
+    <a href="#" rel="modal:close"><button>닫기</button></a>    <!-- 닫기버튼 -->
+</div>
+
+<!-- href 속성값을 사용하여 modal을 띄워주는 링크 -->
+<p><a href="#test" rel="modal:open"><button>모달창 띄우기</button></a></p>
+
+<!-- modal버튼이 있는 html -->
+<a href="ex.html" rel="modal:open">
+    <button>다른 html을 모달로!</button>
+  </a>
