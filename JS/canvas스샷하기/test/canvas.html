@@ -1,0 +1,23 @@
+<!-- 스샷할 영역 -->
+<div id='screenshot' style="padding: 10px; background: #00c3ff">
+    <h1>Screen!</h1>
+</div>
+
+<!-- 스샷 버튼 -->
+<button type="button" id="save">스샷!</button>
+
+<!-- 스샷한 이미지를 띄우기위한 div -->
+<div id="img"></div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script>
+    $(function(){
+        $("#save").click(function() { 
+            html2canvas($('#screenshot').get(0)).then( function (canvas) {
+                document.getElementById('img').appendChild(canvas)
+            });
+        });
+    });
+</script>
